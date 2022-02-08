@@ -11,7 +11,7 @@ for y in range(2020, 2021):
     for m in range(1, 2):
         for n in range(0, 10001):
 
-            url = "https://www.mk.co.kr/news/economy/view/{}/{:02d}/{}/".format(y, m, n)  # "economy is meaningless because article shown is determined by 'n'
+            url = "https://www.mk.co.kr/news/economy/view/{}/{:02d}/{}/".format(y, m, n)  # "economy" is meaningless because article shown is determined by 'n'
             art = Article(url, keep_article_html=True)
 
             try:
